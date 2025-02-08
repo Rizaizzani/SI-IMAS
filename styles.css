@@ -1,0 +1,70 @@
+/* Hero Section dengan Gambar */
+.hero-section {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+
+/* Efek Transparan untuk Teks agar Terbaca */
+.hero-section h2, .hero-section p {
+    background: rgba(243, 241, 241, 0.541); /* Transparan hitam */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1rem;
+    }
+    .hero-section h2 {
+        font-size: 2xl;
+    }
+}
+
+/* Animasi hover untuk berita */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling input pencarian */
+#search {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+/* Styling form pengaduan */
+#complaint-form {
+    transition: transform 0.3s ease;
+}
+#complaint-form:hover {
+    transform: scale(1.02);
+}
+/* Notifikasi Toast */
+#notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+#notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}

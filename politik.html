@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Politik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Gaya tambahan untuk mempercantik */
+        .header-bg {
+            background: url('politik.png') center/cover no-repeat;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+        <a href="index.html" class="text-lg font-bold">← Kembali ke Beranda</a>
+        <h1 class="text-xl font-semibold">Berita Politik</h1>
+    </nav>
+
+    <!-- Header dengan Background Gambar -->
+    <section class="header-bg text-center text-white">
+        <h1 class="text-4xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+            Berita Politik
+        </h1>
+    </section>
+
+    <!-- Daftar Berita -->
+    <section class="p-8">
+        <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Berita Terkini</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md card">
+                <h3 class="text-xl font-bold text-red-600">📜 Perubahan Kebijakan</h3>
+                <p class="text-gray-600 mt-2">Pemerintah merombak kebijakan strategis untuk kemajuan negara.</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                    Baca Selengkapnya
+                </button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md card">
+                <h3 class="text-xl font-bold text-red-600">🗳️ Pemilu 2025</h3>
+                <p class="text-gray-600 mt-2">Partai politik mulai bersiap untuk pemilu mendatang.</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                    Baca Selengkapnya
+                </button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md card">
+                <h3 class="text-xl font-bold text-red-600">📊 Survei Terbaru</h3>
+                <p class="text-gray-600 mt-2">Hasil survei terbaru menunjukkan tren politik yang berubah.</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+                    Baca Selengkapnya
+                </button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="bg-blue-800 text-white text-center p-6 mt-8">
+        <div class="container mx-auto">
+            <p class="text-lg font-semibold">© 2025 SI IMAS. Semua Hak Dilindungi.</p>
+            <div class="flex justify-center space-x-4 mt-3">
+                <a href="#" class="text-gray-300 hover:text-yellow-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-300 hover:text-yellow-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-300 hover:text-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-300 hover:text-yellow-400 transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-sm mt-3">Dibangun dengan ❤️ oleh Tim SI IMAS</p>
+        </div>
+    </footer>
+</body>
+</html>
